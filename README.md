@@ -54,3 +54,5 @@
 3. **Ders**
 
 - Figma Practices
+  - https://www.uidesigndaily.com/posts/figma-groups-list-dark-theme-app-day-1466 
+  - https://intern-2024.vercel.app 
