@@ -1,0 +1,126 @@
+.activite {
+  height: 662px;
+  width: 975px;
+  background-color: $ebony-clay;
+  border-radius: 25px;
+  padding: 35px;
+  @include flex(row, nowrap, flex-start, flex-start);
+  gap: 40px;
+  
+  &__sidebar {
+    width: 88px;
+    height: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: $mirage;
+    @include flex(column, nowrap);
+    gap: 15px;
+    
+    &-item {
+      padding: 13px;
+      border-radius: 10px;
+      
+      &.-active {
+        background-color: $ebony-clay;
+      }
+      &:hover {
+        border-radius: 10px;
+        background-color: $ebony-clay;
+        transition: all .3s;
+      }
+    }
+  }
+  &__content {
+    width: 100%;
+    @include flex(column, nowrap, space-between, normal);
+    gap: 35px;
+    padding-top: 20px;
+  }
+  &__header {
+    height: 52px;
+    @include flex(row, nowrap, space-between);
+  }
+  &__back-btn {
+    @include flex(row, nowrap);
+    gap: 10px;
+
+    &-name {
+      font-size: 26px;
+      font-weight: bold;
+      color: $pigeon-post;
+    }
+  }
+  &__tab {
+    $radius: 13px;
+    @include flex(row, nowrap);
+    border: 2px solid $mirage;
+    border-radius: $radius;
+    overflow: hidden;
+    
+    &-btn {
+      cursor: pointer;
+      border: none;
+      height: 52px;
+      width: 52px;
+      background-color: transparent;
+
+      &.-active {
+        background-color: $mirage;
+      }
+    }
+  }
+  &__list {
+    @include flex(row, wrap, normal);
+    gap: 20px;
+  }
+  &__item {
+    position: relative;
+    @include flex(column);
+    padding: 20px;
+    height: 208px;
+    width: 173px;
+    background-color: $mirage;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px -15px $ebony;
+    color: $pigeon-post;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+
+    &.-create {
+      background-color: $pickled-bluewood;
+    }
+
+    &-img {
+      height: 72px;
+      width: 72px;
+      border-radius: 100%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    &-title {
+      margin-bottom: 5px;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+    &-count {
+      font-size: 14px;
+      font-weight: medium;
+      text-transform: capitalize;
+    }
+
+    &.-active::before {
+      content: attr(data-count);
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      height: 20px;
+      width: 20px;
+      font-size: 10px;
+      @include flex;
+      color: $white;
+      background-color: $heliotrope;
+      border-radius: 50%;
+    }
+  }
+}

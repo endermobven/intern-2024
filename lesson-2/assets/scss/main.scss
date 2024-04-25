@@ -1,0 +1,26 @@
+@import "./base/";
+@import "./abstracts";
+@import "./components";
+@import "./mixin";
+@import "./layouts";
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.flex {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+ */
+ @include flex(column, nowrap, center, flex-end);
+ @include shadow;
+  gap: 20px;
+  width: 500px;
+  height: 150px;
+  margin-top: $xxl;
+  background-color: pink;
+}

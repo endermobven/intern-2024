@@ -1,0 +1,56 @@
+$header-height: 80px;
+
+.header {
+  height: $header-height;
+  width: 100%;
+  background-color: $black;
+  margin-bottom: $xxl;
+  color: $white;
+
+  &-content {
+    height: $header-height;
+    @include flex(row, nowrap, space-between);
+    
+    &__logo {
+      height: 40px;
+      width: 40px;
+      background-color: $red;
+      @include flex;
+    }
+    &__menu {
+      list-style: none;
+      @include flex(row, nowrap, space-between);
+      gap: 20px;
+
+      &-item {
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 2px;
+        padding: 5px;
+        
+        &:hover {
+          border-radius: 3px;
+          cursor: pointer;
+          transition: all .3s;
+          background-color: $red;
+        }
+        
+        &.-blue {
+          background-color: $blue;
+        }
+        &.-green {
+          background-color: $green;
+        }
+        &.-yellow {
+          background-color: $yellow;
+        }
+      }
+    }
+    &__social {
+      list-style: none;
+      font-family: Arial, Helvetica, sans-serif;
+      @include flex(row, nowrap, space-between);
+      gap: 20px;
+    }
+  }
+}

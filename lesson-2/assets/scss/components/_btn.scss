@@ -1,0 +1,21 @@
+.btn {
+  height: 40px;
+  width: 200px;
+  border-radius: 5px;
+  border: none;
+  background-color: $black;
+  color: $white;
+
+  &.blue {
+    background-color: $blue;
+  }
+  &.red {
+    background-color: $red;
+  }
+  &.yellow {
+    background-color: $yellow;
+  }
+  &.sm {
+    width: 100px;
+  }
+}

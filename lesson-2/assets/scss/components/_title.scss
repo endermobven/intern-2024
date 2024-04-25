@@ -1,0 +1,21 @@
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  
+  &.sm {
+    font-size: 14px;
+  }
+  &.md {
+    font-size: 22px;
+  }
+  &.xl {
+    font-size: 26px;
+  }
+
+  &.red {
+    color: $red;
+  }
+  &.blue {
+    color: $blue;
+  }
+}

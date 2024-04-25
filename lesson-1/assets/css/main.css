@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  height: 40px;
+  width: 200px;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  color: white;
+}
+.btn.blue {
+  background-color: blue;
+}
+.btn.red {
+  background-color: red;
+}
+.btn.yellow {
+  background-color: yellow;
+}
+.btn.sm {
+  width: 100px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+}
+.title.sm {
+  font-size: 14px;
+}
+.title.md {
+  font-size: 22px;
+}
+.title.xl {
+  font-size: 26px;
+}
+.title.red {
+  color: red;
+}
+.title.blue {
+  color: blue;
+}
+
+.header {
+  height: 80px;
+  width: 100%;
+  background-color: black;
+  margin-bottom: 30px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.flex {
+  /* display: flex;
+   justify-content: space-between;
+   align-items: center;
+  */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-end;
+  box-shadow: 4px 0 5px rgba(0, 0, 0, 0.3);
+  gap: 20px;
+  width: 500px;
+  height: 150px;
+  margin-top: 30px;
+  background-color: pink;
+}/*# sourceMappingURL=main.css.map */
